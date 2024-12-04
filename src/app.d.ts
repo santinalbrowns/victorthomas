@@ -77,6 +77,13 @@ declare global {
 		created_at: string;
 	}
 
+	interface Reports {
+		sales: number,
+		purchases: number,
+		products: number,
+		categories: number
+	}
+
 }
 
 export { };

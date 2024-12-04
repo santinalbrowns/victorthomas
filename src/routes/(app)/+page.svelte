@@ -1,4 +1,8 @@
+<script lang="ts">
+  import type { ActionData } from "./$types";
 
+  let { data }: { data: PageData; } = $props();
+</script>
   
   <!-- svelte-ignore a11y-no-noninteractive-element-to-interactive-role -->
   <section
@@ -10,16 +14,16 @@
     <section class="col-span-2 py-5 rounded-lg space-y-10">
       <div class="grid grid-cols-3 rounded gap-10">
         <div class="px-6 py-3 border rounded-md">
-          <div class="text-2xl font-bold">0</div>
-          <span class="text-gray-400 text-xs">Total Stock</span>
+          <div class="text-2xl font-bold">{data.reports.categories}</div>
+          <span class="text-gray-400 text-xs">Total Categories</span>
         </div>
         <div class="px-6 py-3 border rounded-md">
-          <div class="text-2xl font-bold">0</div>
-          <span class="text-gray-400 text-xs">Available Stock</span>
+          <div class="text-2xl font-bold">{data.reports.products}</div>
+          <span class="text-gray-400 text-xs">Total Products</span>
         </div>
         <div class="px-6 py-3 border rounded-md">
-          <div class="text-2xl font-bold">0</div>
-          <span class="text-gray-400 text-xs">Units Sold</span>
+          <div class="text-2xl font-bold">{data.reports.categories}</div>
+          <span class="text-gray-400 text-xs">Total Sales</span>
         </div>
       </div>
   
@@ -43,7 +47,7 @@
           <div class="">
             <div class="text-xs text-gray-400">Total Sales</div>
             <div class="text-2xl font-bold">
-              0
+              MWK{data.totalPrice}
             </div>
           </div>
         </div>
