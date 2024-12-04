@@ -47,7 +47,7 @@
           <div class="">
             <div class="text-xs text-gray-400">Total Sales</div>
             <div class="text-2xl font-bold">
-              MWK{data.totalPrice}
+              K{data.totalPrice}
             </div>
           </div>
         </div>
